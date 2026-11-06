@@ -18,7 +18,17 @@
         "entitlements": [],
         "privacy": {}
       },
-      "versions": []
+      "versions": [
+        {
+          "version": "1.0.1",
+          "buildVersion": "1",
+          "date": "2026-11-06T17:17:55Z",
+          "localizedDescription": "SpotiTinder: swipe-to-clean Spotify playlists, with AltStore auto-updates",
+          "downloadURL": "https://github.com/DustdevDM/SpotiTinder/releases/download/v1.0.1/SpotiTinder.ipa",
+          "size": 1019737,
+          "minOSVersion": "18.0"
+        }
+      ]
     }
   ],
   "news": []
