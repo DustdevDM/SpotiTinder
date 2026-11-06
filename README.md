@@ -23,10 +23,20 @@ You need AltStore Classic 2.3 or newer, which requires iOS 17.4+. Since 2.3, its
 
 1. Install **AltStore Classic** on your iPhone, following the guide at altstore.io. The first install may still need AltServer on your Mac, once.
 2. In AltStore, open Settings and tap **Set up Remote AltServer**. From then on, refreshing works without a computer.
-3. Build the app file: `scripts/build-ipa.sh`. This creates `dist/SpotiTinder.ipa`.
-4. Move the `.ipa` to your iPhone, for example with AirDrop to Files. In AltStore, go to **My Apps ▸ +** and pick it.
+3. In AltStore, open **Sources ▸ +** and add this URL:
+   `https://raw.githubusercontent.com/DustdevDM/SpotiTinder/main/altstore-source.json`
+4. Open SpotiTinder in that source and tap **Free** to install it.
 
-AltStore renews the 7-day signature for you. To update the app, run the script again and install the new `.ipa` the same way.
+AltStore renews the 7-day signature for you and shows new versions under **My Apps ▸ Updates**.
+
+**How updates are made:** every push to `main` runs `.github/workflows/release.yml`. It does three things:
+1. Builds `SpotiTinder.ipa` with version `1.0.<run number>`.
+2. Publishes it as a GitHub release.
+3. Adds it to `altstore-source.json`.
+
+Changes that only touch Markdown files don't trigger a release.
+
+To build an `.ipa` by hand instead, run `scripts/build-ipa.sh`. It creates `dist/SpotiTinder.ipa`, which you can install via **My Apps ▸ +**.
 
 Apple's limits for free Apple IDs still apply:
 - 3 sideloaded apps at once, and AltStore counts as one.
