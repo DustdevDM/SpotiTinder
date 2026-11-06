@@ -1,0 +1,6 @@
+token.json
+xcuserdata/
+DerivedData/
+build/
+.DS_Store
+dist/

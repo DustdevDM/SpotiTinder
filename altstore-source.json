@@ -1,0 +1,25 @@
+{
+  "name": "SpotiTinder",
+  "identifier": "com.dustin.SpotiTinder.source",
+  "subtitle": "Tinder-style cleanup for your Spotify playlists.",
+  "iconURL": "https://raw.githubusercontent.com/DustdevDM/SpotiTinder/main/SpotiTinder/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "tintColor": "#1DD761",
+  "apps": [
+    {
+      "name": "SpotiTinder",
+      "bundleIdentifier": "com.dustin.SpotiTinder",
+      "developerName": "DustdevDM",
+      "subtitle": "Swipe to keep or remove songs.",
+      "localizedDescription": "Swipe through a Spotify playlist or your Liked Songs: right to keep, left to remove, up to add or move a song to another playlist. Nothing changes on Spotify until you apply your changes in Review. Also finds duplicates (single vs. album versions, remasters) and lets you decide whole artists at once. Needs Spotify Premium for playback.",
+      "iconURL": "https://raw.githubusercontent.com/DustdevDM/SpotiTinder/main/SpotiTinder/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "tintColor": "#1DD761",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": []
+    }
+  ],
+  "news": []
+}
